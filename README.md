@@ -1,6 +1,10 @@
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This project was made for the purpose of internship assignment submission.
+It has the following task: 
+1. Develop a React application using Functional components only, that can be used to upload images from the local filesystem and to view them on the webpage. 
+2. Uploaded image and its properties such as the name of the file, dimensions of the image, blob content should be stored in a React state.
 
 ## Available Scripts
 

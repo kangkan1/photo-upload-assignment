@@ -60,25 +60,17 @@ class App extends Component {
       };
       let img = event.target.files[0];
       var url = img.name
-      console.log('File name: '+String(url))
       const file = event.target.files[0];
-      console.log(String(event.target.files[1]));
       const fileType = file['type'];
       const validImageTypes = ['image/gif', 'image/jpeg', 'image/png', 'image/jpg'];
-      if (validImageTypes.includes(fileType)) {
-          
+      if (validImageTypes.includes(fileType)) { 
           this.setState({
             image: URL.createObjectURL(img),
             validFile: true,
             imageName: img.name,
             type: img.type,
             size: img.size,
-          });
-
-          console.log('Valid', fileType);
-          console.log(this.state.dimensions);
-
-          
+          });         
       }else {
         this.setState({
             image: null,
